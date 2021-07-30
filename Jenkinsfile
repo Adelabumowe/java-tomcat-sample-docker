@@ -17,7 +17,7 @@ pipeline {
             steps {
                 bat "cd"
                 bat "dir"
-                sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
+                bat "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
 
